@@ -1,6 +1,9 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
 
-    <style name="Base.Theme.MiniPaint" parent="Theme.Material3.Light.NoActionBar"/>
+    <style name="Base.Theme.MiniPaint" parent="Theme.Material3.Light.NoActionBar">
+        <!-- shows full screen by covering notch area-->
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    </style>
 
     <style name="Theme.MiniPaint" parent="Base.Theme.MiniPaint" />
 </resources>
