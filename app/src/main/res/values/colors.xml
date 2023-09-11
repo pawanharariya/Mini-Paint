@@ -7,4 +7,12 @@
     <color name="default_paint_color">#000000</color>
     <color name="colorBackground">#ffffff</color>
     <color name="colorPaint">#000000</color>
+    <color name="paint_green">#09AF00</color>
+    <color name="paint_red">#D50000</color>
+    <color name="paint_purple">#6200EA</color>
+    <color name="paint_blue">#2962FF</color>
+    <color name="paint_yellow">#FFD600</color>
+    <color name="paint_orange">#FF6D00</color>
+    <color name="paint_black">#000000</color>
+    <color name="paint_white">#FFFFFF</color>
 </resources>

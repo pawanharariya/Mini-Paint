@@ -9,8 +9,37 @@
     <com.example.minipaint.CanvasView
         android:id="@+id/canvas"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="0dp"
+        android:contentDescription="@string/canvas_content_desc"
+        app:layout_constraintBottom_toTopOf="@id/options_view"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <RelativeLayout
+        android:id="@+id/options_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/options_view_background"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent">
 
+        <TextView
+            android:id="@+id/paint_color_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/paint_color_picker"
+            android:layout_alignBottom="@id/paint_color_picker"
+            android:gravity="center_vertical"
+            android:text="Paint Color"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <include
+            android:id="@+id/paint_color_picker"
+            layout="@layout/color_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/paint_color_label" />
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
